@@ -299,8 +299,8 @@ header
 .header {
      width: 100%;
      background: rgba(39, 43, 44, 0.87);
-     height: 106px;
-     padding: 37px 30px;
+     height: 65px;
+     padding: 12px 48px;
      position: absolute;
      z-index: 999;
      box-shadow: 3px 0 13px rgba(30, 30, 30, 0.90);
@@ -370,7 +370,7 @@ ul.email li i {
 /** banner_main **/
 
 #top_section {
-     background-image: url('../images/banner.jpg');
+     background-image: url('../images/bannerr.jpg');
      background-size: cover;
      background-repeat: no-repeat;
      padding-top: 120px;
@@ -378,7 +378,13 @@ ul.email li i {
      height: 100vh;
      background-position: center;
 }
-
+#top_section:before {
+     content: "";
+    background-image: linear-gradient(to right,rgba(169, 18, 224, 0.348),rgba(187, 0, 255, 0.156),rgba(255, 0, 0, 0.019));
+     position: absolute;
+     width: 50%;
+     inset: 0;
+   }
 #myCarousel .carousel-indicators {
      bottom: -50px;
      margin-left: 11px;
@@ -432,8 +438,10 @@ ul.email li i {
 
 .banner_main .bluid .read_more {
      margin-right: 8px;
-     background: #fff;
-     color: #000;
+     background: #11dde8;
+     border-radius: 10px;
+     color: #ffffff;
+     font-family: monospace;
 }
 
 .banner_main .bluid .read_more:hover {
